@@ -1,0 +1,8 @@
+- Fully port header styles to Tailwind [x]
+- Make header links clickable [x]
+- Add /about route [x]
+- Replace styles in index route with my styles [x]
+- Make index route links clickable [x]
+- Add post route [x]
+- Make index route use getStaticProps [ ]
+- Fully port /about styles to Tailwind [ ]

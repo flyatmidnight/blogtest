@@ -1,13 +1,20 @@
 import Link from 'next/link';
+
 export function Header() {
   return (
-    <div className="flex items-center justify-between max-w-3xl px-8 mx-auto py-4">
+    <div className="absolute left-10 top-10">
+      <p className="font-semibold pb-1">Dom Eccleston</p>
       <Link href="/">
-        <a className="block font-bold text-lg">Jared Palmer</a>
+        <a>
+          <p className="pb-1">Posts</p>
+        </a>
       </Link>
-      <a target="_blank" href="https://twitter.com/jaredpalmer" rel="noopener">
-        Follow Me
-      </a>
+      <Link href="/about">
+        <a>
+          <p className="pb-1">About</p>
+        </a>
+      </Link>
+      <p className="pb-1">Dark</p>
     </div>
   );
 }
