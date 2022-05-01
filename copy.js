@@ -19,9 +19,9 @@ export default function Home(props) {
   return (
     <>
       <Header />
-      <div className="max-w-3xl mx-auto px-8 py-11">
+      <div className="max-w-3xl mx-auto px-8 py-10">
         {posts.posts.map((post) => (
-          <Post key={post.date} {...post} />
+          <Post key={post.date + post.title} {...post} />
         ))}
       </div>
     </>
