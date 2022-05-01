@@ -14,4 +14,5 @@
 - Get footer to appear on index route [x]
 - Switch everything to .mdx [x]
 - Dynamically obtain all files via Nextra page map [x]
-- Make list view responsive [ ]
+- Make list view responsive [x]
+- Fix 
