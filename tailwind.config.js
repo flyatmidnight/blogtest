@@ -8,8 +8,10 @@ module.exports = {
         DEFAULT: {
           css: {
             h1: {
-              'font-weight': '700'
-            }
+              'font-weight': '700',
+              'max-width': '42rem'
+            },
+            '--tw-prose-invert-body': '#e5e5e5',
           }
         }
       }

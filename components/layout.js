@@ -10,7 +10,11 @@ const components = {};
 export default function Blog(props) {
   const { meta, route, pageMap, ...rest } = props;
 
-  const blogPosts = pageMap.find(({ name }) => name === 'blog').children;
+  const blogPosts = pageMap
+    .find(({ name }) => name === 'blog')
+    .children.filter((post) => post.frontMatter.draft !== true);
+
+  console.log(blogPosts);
 
   blogPosts.sort((a, b) => (a.date <= b.date ? 1 : -1));
 
@@ -28,7 +32,7 @@ export default function Blog(props) {
   if (route == '/') {
     return function Layout({ children }) {
       return (
-        <div className="h-screen relative">
+        <div className="min-h-screen relative">
           {sharedHead}
           <Header />
           <PostList posts={blogPosts} />
@@ -42,14 +46,14 @@ export default function Blog(props) {
   if (route.startsWith('/blog') || route === '/about') {
     return function Layout({ children }) {
       return (
-        <>
+        <div className="w-full">
           {sharedHead}
           <Header />
-          <div className="h-screen relative dark:prose-invert prose mx-auto px-4 py-8">
+          <div className="min-h-screen lg:max-w-3xl dark:prose-invert prose mx-auto px-4 pt-10 pb-28">
             <MDXProvider components={components}>{children}</MDXProvider>
           </div>
           <Footer />
-        </>
+        </div>
       );
     };
   }

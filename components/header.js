@@ -40,12 +40,12 @@ export function Header() {
       {headerLinks.map(({ path, text }) => (
         <HeaderLink key={path + text} path={path} text={text} />
       ))}
-      <p
+      <button
         className="inline pb-1 cursor-pointer"
         onClick={() => toggleTheme(theme)}
       >
         {theme === 'dark' ? 'Light' : 'Dark'}
-      </p>
+      </button>
       <br />
     </header>
   );
