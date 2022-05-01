@@ -1,10 +1,6 @@
 const nextra = require('nextra');
 
 module.exports = nextra('./components/layout.js')({
-  i18n: {
-    locales: ["en"],
-    defaultLocale: "en",
-  },
   experimental: {
     turboMode: true,
   },
