@@ -18,6 +18,7 @@ export default function Blog(props) {
 
   const sharedHead = (
     <Head>
+      <title>Dom Eccleston's blog</title>
       <meta property="og:title" content={meta.title} />
       <meta property="og:site_name" content="Dom Eccleston's blog" />
       <meta property="og:description" content={meta.description} />
@@ -42,27 +43,14 @@ export default function Blog(props) {
     };
   }
 
-  if (route.startsWith('/blog') || route === '/about') {
-    return function Layout({ children }) {
-      return (
-        <div className="w-full">
-          {sharedHead}
-          <Header />
-          <div className="min-h-screen lg:max-w-3xl dark:prose-invert prose mx-auto px-4 pt-10 pb-28">
-            <MDXProvider components={components}>{children}</MDXProvider>
-          </div>
-          <Footer />
-        </div>
-      );
-    };
-  }
-
   return function Layout({ children }) {
     return (
-      <div className="h-screen relative">
+      <div className="w-full">
         {sharedHead}
         <Header />
-        {children}
+        <div className="min-h-screen lg:max-w-3xl dark:prose-invert prose mx-auto px-4 pt-10 pb-28">
+          <MDXProvider components={components}>{children}</MDXProvider>
+        </div>
         <Footer />
       </div>
     );
