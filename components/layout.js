@@ -14,18 +14,17 @@ export default function Blog(props) {
     .find(({ name }) => name === 'blog')
     .children.filter((post) => post.frontMatter.draft !== true);
 
-  console.log(blogPosts);
-
   blogPosts.sort((a, b) => (a.date <= b.date ? 1 : -1));
 
   const sharedHead = (
     <Head>
       <meta property="og:title" content={meta.title} />
-      <meta property="og:site_name" content="Jared Palmer's blog" />
+      <meta property="og:site_name" content="Dom Eccleston's blog" />
       <meta property="og:description" content={meta.description} />
       <meta name="twitter:card" content="summary_large_image" />
-      <meta name="twitter:site" content="@jaredpalmer" />
+      <meta name="twitter:site" content="@dom__inic" />
       <meta property="og:image" content={meta.og} />
+      <link rel="icon" type="image/png" href="/d.png" />
     </Head>
   );
 
