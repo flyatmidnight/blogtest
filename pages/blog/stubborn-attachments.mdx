@@ -2,65 +2,79 @@
 title: Notes on Stubborn Attachments by Tyler Cowen
 slug: /blog/stubborn-attachments
 date: 02-05-22
-draft: true
+draft: false
 ---
+
+import FixedSizeImage from '../../components/fixed-size-image.js';
 
 # Notes on Stubborn Attachments by Tyler Cowen
 
-These were my main takeaways from Stubborn Attachments, available here at Stripe Press. They aren't
-a complete summary of the book, just the parts I found most interesting.
+<FixedSizeImage
+  src="/stubbornattachments.png"
+  alt="Stubborn Attachments"
+  height={500}
+  width={800}
+/>
 
-## We underestimate the power of long-term economic growth
+This is a short (110 page) book by the libertarian economist Tyler Cowen. He's a professor at George Mason University in the US, but most famous for his podcast (Conversations with Tyler) where he grills a wide variety of interesting people on their work. I highly recommend it: like all great interviewers, he does a vast amount of background research on his guests - it’s common for them to ask him in amazement
+how we knew some obscure fact about their life or work.
 
-> We often forget how overwhelmingly positive the effects of economic growth have
-> been. Economist Russ Roberts requently polls journalists about
-> how much economic growth there has been since the year 1900. The typical response is that the standard of living has gone up by around fifty
-> percent. __In reality, the U.S. standard of living has increased by a factor of
-> five to seven__, estimated conservatively.
+This book is a summary of some of his core views. Here are five interesting questions that it raises:
 
-**Life in 1900**:
+## 1. How good is economic growth?
+
+Our societies operate with the assumption that economic growth is a very good thing. Maximising GDP growth is a core goal of a government; being in recession (two quarters of negative growth) is perceived to be something very bad. Why?
+
+It's not obvious why our societies should need to constantly be growing. Since we're already wealthy, can't we just be happy with what we have? Indeed, this is actually a common line of argument from proponents of degrowth, usually along environmental lines: maybe we should aim to reduce economic growth along with consumption, or [pull a Bhutan and track Gross National Happiness instead](https://ophi.org.uk/policy/gross-national-happiness-index/#:~:text=The%20phrase%20'gross%20national%20happiness,approach%20towards%20notions%20of%20progress).
+
+To answer that question, consider the wealthiest societies of the world in the late 19th century:
+
 - 25% of US households had running water
 - 12% had gas or electricity
 - US High school graduation rate was 6%
 - Typical US worker did 60 hour weeks at a physically arduous job
 - Western European life expectancy was around 40 years
 
-We have gained in leisure time, not just work. In 1880, individuals spent 80% of their discretionary time
-working. Now we spend an average of 59% doing what we like.
+A century of economic growth produced the conditions we enjoy today.
 
-## Tiny changes in the rate of economic growth produce vastly different outcomes
+<FixedSizeImage
+  src="/world-gdp.png"
+  className="mx-auto"
+  width={600}
+  height={400}
+  alt="world GDP over time "
+/>
 
-> Looking into the more distant future makes the question of the economic growth rate all the more important.
+But because economic growth relies on compounding over time, tiny changes in the rate of growth produce vastly different outcomes:
+
 > For instance, a two percent rate of economic growth, as opposed to a one percent rate, makes only a small
 > difference across the time horizon of a single year. But as time passes, the higher growth rate eventually
 > brings about a very large boost to well-being. To make this concrete, here's an experiment: **redo U.S.
-> history, but assume the country's economy had grown one percentage point less each year between 1870 and
-> 1990. In that scenario, the United States of 1990 would be no richer than the Mexico of 1990**
+> history, but assume the country's economy had grown one percentage point less each year between 1870 and 1990. In that scenario, the United States of 1990 would be no richer than the Mexico of 1990**
 
-## Money = log(happiness)
+Now it makes sense why governments worry about GDP figures. In fact, they should probably worry more: every one per cent of growth lost costs our descendants dearly.
 
-The most comprehensive study of the income-happiness link shows that the relationship
-is roughly linear-log, implying that income boosts happiness even at higher levels of earnings. 
+## 2. Does money bring happiness?
 
-It's true that some older studies showed that income does not boost happiness further after a certain
-level of wealth. These studies, which tended to rely on asking people questions about their happiness,
-observed a 'hedonic treadmill' effect, where more wealth brought higher expectations, and less satisfaction.
+OK, so growth matters. But readers in Bhutan might still protest that wellbeing matters more. What’s the point in being rich when it doesn’t make us happy anyway?
 
-But because these surveys rely on language, they miss the fact that our language around the term 'happiness'
-is also subject to inflation. Someone in a Kenyan hospital might report that they are 'happy' with their
-medical care, which in a sense is true: it meets their expectations. But despite that, they are subject to
-real suffering in a way that they would not be if they were in a Western hospital.
+The relationship between money and happiness is complex. Tyler spends a fair amount of time dissecting the evidence on it. In general, it seems that money does continue to lead to happiness, including at higher levels of earnings. But there is also survey data indicating a ‘hedonic treadmill’ effect, whereby wealth boosts happiness up to a point, but then trails off.
 
-Also, questionnaires suffer from selection bias: they don't include the people in poorer countries who
-died from disease, hard labour, or poverty, poor countries would score much lower on questionnaires.
+What’s particularly clear is that while the relationship between money and happiness is non-linear, what more wealth is particularly effective at is preventing unhappiness. It’s true that getting a 10% raise is unlikely to result in a 10% rise in wellbeing. But having a well-developed economy massively reduces the probability of dying, being incapacitated by your manual labour job, or having your loved one suffer from a life-threatening illness, and any number of rare events that tank your happiness levels.
 
-Wealth also serves as a cushion against very bad events at the societal level. 10 years ago, it was common
-to argue that once a country attained the level of wealth found in Greece, happiness flatlined. Yet since then,
-Greece has suffered an economic crisis, high unemployment, and this argument is no longer common.
+This is true at the individual level, but also at the societal level. 10 years ago, it was common to argue that once a country attained about the level of wealth found in Greece, happiness flatlined, and that there was no need to pursue further growth. Yet since then, Greece has suffered an economic crisis, high unemployment, and political extremism. If Greece had been wealthier, it would have had spare capacity to respond to catastrophe.
 
-Within a country, wealthy people report unambiguously higher levels of happiness than poorer people.
+Because literature on happiness relies on survey data, it misses this: surveys exclude individuals that are dead or hospitalised, the population of which is far larger in poorer countries.
 
-## Economic growth democratizes luxury goods
+## 3. Is there a tradeoff between growth and equality?
+
+Although global poverty has declined massively, a common worry is that inequality has risen. We might be more concerned about promoting economic growth if a side effect of that is increased inequality within countries.
+
+For example, it might be the case that the spoils of economic growth had overwhelmingly accreted to the wealthiest in society. That would mean that that standards of living improved for a small subset of society, but that the poor remained poor.
+
+But in fact, we don’t see that: the poorest 20% in America are far better off than the poorest 20% elsewhere.
+
+Still, even though living standards have improved for all, haven’t they disproportionately improved for the rich? Maybe. But another effect of economic growth is that it democratises quality of life improvements. In the 19th century, the richest could afford to live vastly different lives from the poor. Yet today, most luxuries are affordable in some form to all of us:
 
 > Imagine that a time traveller paid a visit to Bill Gates today. He would find televisions, automobiles,
 > refrigerators, central heating, antibiotics, plentiful food, flush toilets, cell phones, personal computers,
@@ -68,35 +82,17 @@ Within a country, wealthy people report unambiguously higher levels of happiness
 > seen from the point of view of a person from the eighteenth century, are those shared by most citizens of
 > wealthy countries today.
 
-## Economic growth benefits poorer countries
+## 4. How much should we value the future?
 
-There is an intution that rich countries harm poor countries, by absorbing investment and peopl from
-them. But it's also true that those poorer countries benefit from the flow of more advanced technology from
-richer countries. This is what enabled China's growth.
+The most interesting takeaway from Stubborn Attachments for me was the notion that decisions about economic growth today affect the world hundreds of years into the future. In fact, Tyler points out that there is evidence that the prosperity of a region well before 0BC strongly predicts its prosperity today.
 
-## Faith
-
-The decisions we make about our GDP today affect the GDP of the world a thousand years down the line:
-there is even research suggestions that the prosperity of a region well before 0BC strongly predicts its
-prosperity today. Most of the benefits of economic growth today will be realized in the far future. 
-How do we keep that future in mind?
+To make matters more complicated, economic growth can take a long time to work. In fact, in the early English industrial revolution it took a number of decades for the benefits of economic growth to accrue to the poor. But if redistributive policies had been implemented earlier, the total amount of economic growth might have been lessened, harming more people in the long run.
 
 > The actual attitudes required to induce an acceptance of such long time horizons are, in psychological
 > terms, much closer to a kind of faith. We cannot see these very distant expected gains, but we must believe
 > in them nonetheless, and we must hold those beliefs near and dear to our hearts. In this sense, we should
 > strongly reject the modern secular tendency to claim that a good politics can or should be devoid of faith.
 
-## Common-sense morality
+—
 
-Because of the importance of long-term growth, Tyler argues, it it is not necessary to reject 'common-sense
-morality' in favour of redistributive utilitarianism a la Peter Singer:
-
-> Most of us should work hard, be creative, be loyal to our civilization, build healthy institutions,
-> save for the future, contribute to an atmosphere of social trust, be critical when necessary, and love
-> our families. Our strongest obligations are to contribute to sustainable economic growth and to support
-> the general spread of civilization, rather than to engage in massive charitable redistribution in the
-> narrower sense. In the longer run, greater economic growth and a more stable civilization will help the
-> poor most of all.
-
----
-
+Stubborn Attachments is available to buy now from [Stripe Press](https://press.stripe.com/stubborn-attachments).
