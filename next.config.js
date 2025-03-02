@@ -1,29 +1,10 @@
-const nextra = require('nextra');
-
-const nextConfig = nextra('./components/layout.js')({
-  experimental: {
-    turboMode: true,
-  },
+/** @type {import('next').NextConfig} */
+const nextConfig = {
+  reactStrictMode: true,
   images: {
-    domains: ['pbs.twimg.com', 'abs.twimg.com'],
-    unoptimized: true, // Required for static export
+    loader: 'akamai',
+    path: '/',
   },
-  headers() {
-    return [
-      {
-        source: '/atom/:nested*',
-        headers: [
-          {
-            key: 'content-type',
-            value: 'text/xml',
-          },
-        ],
-      },
-    ];
-  },
-});
-
-// Manually add output: export for static export
-nextConfig.output = 'export';
+};
 
 module.exports = nextConfig;
