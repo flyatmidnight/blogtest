@@ -6,6 +6,7 @@ const nextConfig = nextra('./components/layout.js')({
   },
   images: {
     domains: ['pbs.twimg.com', 'abs.twimg.com'],
+    unoptimized: true, // Required for static export
   },
   headers() {
     return [
@@ -22,6 +23,7 @@ const nextConfig = nextra('./components/layout.js')({
   },
 });
 
+// Manually add output: export for static export
 nextConfig.output = 'export';
 
 module.exports = nextConfig;
