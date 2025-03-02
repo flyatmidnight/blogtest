@@ -1,6 +1,6 @@
 const nextra = require('nextra');
 
-module.exports = nextra('./components/layout.js')({
+const nextConfig = nextra('./components/layout.js')({
   experimental: {
     turboMode: true,
   },
@@ -21,3 +21,7 @@ module.exports = nextra('./components/layout.js')({
     ];
   },
 });
+
+nextConfig.output = 'export';
+
+module.exports = nextConfig;
